@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 /* URL de la API (tal como la diste) */
 const CLAUDE_API_URL = 'https://ends.apiadonix.space/ai/claude?apikey=felixkey2011';
 
-export const claudeHandler = async (m, { conn, args, text }) => {
+export const handler = async (m, { conn, args, text }) => {
   try {
     const input = (text && text.trim()) || (args && args.join(' ').trim()) || '';
 
@@ -63,3 +63,4 @@ handler.help = ['aiclaude <texto>'];
 handler.tags = ['ia', 'ai'];
 handler.command = ['aiclaude', 'IA', 'claudeia'];
 handler.group = true;
+export default handler;
