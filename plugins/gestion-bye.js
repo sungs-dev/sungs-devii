@@ -122,15 +122,15 @@ const cmdHandler = async (m, { conn, command, args, usedPrefix, isAdmin, isOwner
   let isByeEnabled = chat.bye !== undefined ? chat.bye : true
 
   if (args[0] === 'on' || args[0] === 'enable') {
-    if (isByeEnabled) return conn.reply(m.chat, `👑 la función *bye* ya estaba *activada*.`, m, rcanal)
+    if (isByeEnabled) return conn.reply(m.chat, `🌟 la función *bye* ya estaba *activada*.`, m, rcanal)
     isByeEnabled = true
   } else if (args[0] === 'off' || args[0] === 'disable') {
-    if (!isByeEnabled) return conn.reply(m.chat, `👑 la función *bye* ya estaba *desactivada*.`, m, rcanal)
+    if (!isByeEnabled) return conn.reply(m.chat, `❄ la función *bye* ya estaba *desactivada*.`, m, rcanal)
     isByeEnabled = false
   } else {
     return conn.reply(
       m.chat,
-      `👑 Los admins pueden activar o desactivar la función *${command}* utilizando:\n\n💜 *${command}* enable\n💜 *${command}* disable\n\n🛠 Estado actual » *${isByeEnabled ? '✓ Activado' : '✗ Desactivado'}*`,
+      `☃️ Los admins pueden activar o desactivar la función *${command}* utilizando:\n\n🌟 *${command}* enable\n🌟 *${command}* disable\n\n🛠 Estado actual » *${isByeEnabled ? '✓ Activado' : '✗ Desactivado'}*`,
       m
     )
   }
