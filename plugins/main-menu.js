@@ -134,6 +134,7 @@ let handler = async (m, { conn }) => {
 *|✎ Uptime:* ${uptime}
 *|✎ Ping:* ${p}
 *|✎ Baileys:* PixelCrew-Bails
+*|✎ Comandos:* https://yotsuba-web.giize.com/commands.html
 *╰─ׅ─ׅ┈─๋︩︪─☪︎︎︎̸⃘࣭ٜ࣪࣪࣪۬◌⃘۪֟፝֯۫۫︎⃪𐇽۫۬👑⃘⃪۪֟፝֯۫۫۫۬◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸─ׅ─ׅ┈─๋︩︪─╯*
 
 
