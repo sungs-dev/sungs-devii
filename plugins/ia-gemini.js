@@ -9,27 +9,39 @@ const handler = async (m, { args }) => {
     return m.reply('*⚠️ Por favor escribe un texto después del comando. Ejemplo:\n#ia ¿Cómo está el clima hoy?*');
   }
 
-  // Reacciona con ⏰ mientras espera respuesta de la API
+  // Reacciona con ⏰ mientras espera respuesta
   if (m?.react) await m.react('⏰');
 
-  try {
-    const url = `https://api-adonix.ultraplus.click/ai/gemini?apikey=AdonixKeyd6ne2h9555&text=${encodeURIComponent(texto)}`;
-    const res = await axios.get(url);
+  // Función multi-API, prueba primero la principal y luego hace fallback
+  const askAI = async (texto) => {
+    // Primera API
+    try {
+      const url1 = `https://api.stellarwa.xyz/ai/copilot?text=${encodeURIComponent(texto)}&key=stellar-gTEMBetO`;
+      const res1 = await axios.get(url1);
+      if (res1.data?.result) return res1.data.result;
+    } catch (e) {}
 
-    // Reacciona con 🤖 cuando ya tiene respuesta
+    // Fallback a segunda API
+    try {
+      const url2 = `https://rest.alyabotpe.xyz/ai/copilot?text=${encodeURIComponent(texto)}&key=stellar-0QNEPI8v`;
+      const res2 = await axios.get(url2);
+      if (res2.data?.result) return res2.data.result;
+    } catch (e) {}
+
+    return null;
+  };
+
+  const respuesta = await askAI(texto);
+
+  // Reacciona con 🤖 si todo bien, ❌ si no hubo respuesta
+  if (respuesta) {
     if (m?.react) await m.react('🤖');
-
-    const respuesta = res.data?.result;
-    if (!respuesta) {
-      if (m?.react) await m.react('❌');
-      return m.reply('*❗ Ocurrió un error al conectar con la IA.*');
-    }
-    m.reply(respuesta);
-  } catch (e) {
+    return m.reply(respuesta);
+  } else {
     if (m?.react) await m.react('❌');
-    m.reply('*❗ Ocurrió un error al conectar con la IA.*');
+    return m.reply('*❗ Ocurrió un error al conectar con la IA.*');
   }
-}
+};
 
 handler.help = ['ia <texto>', 'ai <texto>'];
 handler.tags = ['ai', 'chatbot'];
