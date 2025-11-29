@@ -22,7 +22,8 @@ export async function before(m, { groupMetadata }) {
     'luminai',
     'openai',
     'yotsuba',
-    'yotsuba-nakano-ia', // Comandos de IA 
+    'yotsuba-nakano-ia',
+    'formarsala', // Formarsala1
   ]
 
   const validCommand = (command, plugins) => {
