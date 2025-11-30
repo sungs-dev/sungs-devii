@@ -41,7 +41,7 @@ export async function before(m, { groupMetadata }) {
     'system',
     'menudescargas',
     'menustickers',
-    'menugrupos' // MENUS
+    'menugrupos', // MENUS
   ]
 
   const validCommand = (command, plugins) => {
