@@ -3,7 +3,6 @@
     "id": 1,
     "nombre": "Ruby",
     "valor": 12000,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/ruby1.jpg",
       "https://yotsuba-web.giize.com/character/ruby2.jpg",
@@ -18,7 +17,6 @@
     "id": 2,
     "nombre": "Tanjiro",
     "valor": 12500,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/tanjiro1.jpg",
       "https://yotsuba-web.giize.com/character/tanjiro2.jpg"
@@ -28,7 +26,6 @@
     "id": 3,
     "nombre": "Nezuko",
     "valor": 12700,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/nezuko1.jpg",
       "https://yotsuba-web.giize.com/character/nezuko2.jpg"
@@ -38,7 +35,6 @@
     "id": 4,
     "nombre": "Rengoku",
     "valor": 13000,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/rengoku1.jpg"
     ]
@@ -47,7 +43,6 @@
     "id": 5,
     "nombre": "Makima",
     "valor": 13500,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/makima1.jpg",
       "https://yotsuba-web.giize.com/character/makima2.jpg",
@@ -60,7 +55,6 @@
     "id": 6,
     "nombre": "Denji",
     "valor": 14000,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/denji1.jpg",
       "https://yotsuba-web.giize.com/character/denji2.jpg"
@@ -70,7 +64,6 @@
     "id": 7,
     "nombre": "Itachi",
     "valor": 14500,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/itachi.jpg"
     ]
@@ -79,7 +72,6 @@
     "id": 8,
     "nombre": "Naruto",
     "valor": 15000,
-    "estado": "Libre",
     "fotos": [
       "https://yotsuba-web.giize.com/character/naruto1.jpg",
       "https://yotsuba-web.giize.com/character/naruto2.jpg",
